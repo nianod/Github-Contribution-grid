@@ -10,7 +10,11 @@ const colorComponets = [ //green color codes
    "#66FF00",
    "#018749",
    "#03C03C",
-   "#1CAC78"
+   "#1CAC78",
+   "#00FF40",
+   "#006400"
+
+
 ]
 
 const sqnumbers = 200;
@@ -33,6 +37,7 @@ for(let i = 0; i < sqnumbers; i++) {
     actv.classList.add("activity");
 
     cont.appendChild(actv);
+    // cont.append(actv)
 
 }
 
@@ -51,8 +56,8 @@ const showcolor = (tiles) => {
 
     }
 
-    const animColor = () => {
+    const animColor = (tiles) => {
 
-        
+
 
     }
