@@ -33,7 +33,15 @@ for(let i = 0; i < sqnumbers; i++) {
 
 const showcolor = (tiles) => {
 
-    const getColor = colorComponets
+    const getColor = colorComponets()
 
+    tiles.style.backgroundColor = getColor
+    tiles.style.boxshadow `0 0 5px ${getColor}, 0 0 10px ${getColor}`;
 
 }
+
+    greenColor = () => {
+        return colorComponets[Math.floor(Math.random() * colorComponets.length)]
+
+
+    }
