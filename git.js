@@ -61,3 +61,12 @@ const showcolor = (tiles) => {
 
 
     }
+
+
+    const toggle = document.getElementById("white-mode");
+
+    toggle.addEventListener("click", () => {
+        
+        document.body.classList.toggle("whitemode")
+
+    })
