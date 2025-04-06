@@ -4,7 +4,7 @@
 
 const cont = document.getElementById("container")
 
-const colorComponets = [
+const colorComponets = [ //green color codes
 
    "#32de84",
    "#66FF00",
@@ -19,10 +19,15 @@ for(let i = 0; i < sqnumbers; i++) {
 
     const actv = document.createElement("div");
 
-    actv.addEventListener("click", () => {
+    actv.addEventListener("mouseover", () => {
         showcolor(actv)
     })
     
+    actv.addEventListener("mouseout", () => {
+
+        animColor(actv)
+
+    })
 
 
     actv.classList.add("activity");
@@ -33,15 +38,21 @@ for(let i = 0; i < sqnumbers; i++) {
 
 const showcolor = (tiles) => {
 
-    const getColor = colorComponets()
+    const getColor = tileColor()
 
-    tiles.style.backgroundColor = getColor
+    tiles.style.backgroundColor = tileColor();
     tiles.style.boxshadow `0 0 5px ${getColor}, 0 0 10px ${getColor}`;
 
 }
 
-    greenColor = () => {
+    tileColor = () => {
         return colorComponets[Math.floor(Math.random() * colorComponets.length)]
 
+
+    }
+
+    const animColor = () => {
+
+        
 
     }
