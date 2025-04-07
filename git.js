@@ -17,7 +17,7 @@ const colorComponets = [ //green color codes
 
 ]
 
-const sqnumbers = 200;
+const sqnumbers = 1000; // Getting the number of squares
 
 for(let i = 0; i < sqnumbers; i++) {
 
@@ -25,7 +25,7 @@ for(let i = 0; i < sqnumbers; i++) {
 
     actv.addEventListener("mouseover", () => {
         showcolor(actv)
-    })
+    });
     
     actv.addEventListener("mouseout", () => {
 
@@ -43,7 +43,7 @@ for(let i = 0; i < sqnumbers; i++) {
 
 const showcolor = (tiles) => {
 
-    const getColor = tileColor()
+    const getColor = tileColor();
 
     tiles.style.backgroundColor = tileColor();
     tiles.style.boxshadow `0 0 5px ${getColor}, 0 0 10px ${getColor}`;
@@ -55,18 +55,14 @@ const showcolor = (tiles) => {
 
 
     }
-
-    const animColor = (tiles) => {
-
+ 
 
 
-    }
+  const toggleSwitch = document.getElementById("white-mode");
+
+  toggleSwitch.addEventListener("click", () => {
+
+    document.body.classList.toggle("whitemode")
 
 
-    const toggle = document.getElementById("white-mode");
-
-    toggle.addEventListener("click", () => {
-        
-        document.body.classList.toggle("whitemode")
-
-    })
+  });

@@ -32,7 +32,7 @@ body{
 
 .activity {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 2px;
     transform: 2s ease;
     overflow: hidden;
